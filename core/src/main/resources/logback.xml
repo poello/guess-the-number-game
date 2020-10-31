@@ -6,9 +6,9 @@
     </appender>
 
     <logger name="org.example" level="DEBUG"/>
-    <logger name="org.springframework" level="DEBUG"/>
+    <logger name="org.springframework" level="TRACE"/> <!-- level="DEBUG" -->
 
-    <root level="INFO">
+    <root level="DEBUG"> <!-- level="INFO" -->
         <appender-ref ref="STDOUT"/>
     </root>
 </configuration>
