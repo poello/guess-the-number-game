@@ -3,18 +3,17 @@ package org.example;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
     private static final Logger log = LoggerFactory.getLogger(Main.class);
-    private static final String CONFIG_LOCATION = "beans.xml";
 
     public static void main(String[] args) {
         log.info("Guess The Number Game");
 
         // create context (container)
         ConfigurableApplicationContext context
-                = new ClassPathXmlApplicationContext(CONFIG_LOCATION);
+                = new AnnotationConfigApplicationContext(AppConfig.class);
 
         // get number generator bean from context (container)
         NumberGenerator numberGenerator
@@ -26,8 +25,10 @@ public class Main {
         // log generated number
         log.info("number = {}", number);
 
-        // get game bean from context (container)
-        Game game = context.getBean(Game.class);
+        // get message generator bean from context (container)
+        MessageGenerator messageGenerator = context.getBean(MessageGenerator.class);
+        log.info("getMainMessage = {}", messageGenerator.getMainMessage());
+        log.info("getResultMessage = {}", messageGenerator.getResultMessage());
 
         // close context (container)
         context.close();
