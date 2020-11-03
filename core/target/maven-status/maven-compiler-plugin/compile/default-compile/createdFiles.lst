@@ -1,5 +1,7 @@
-org\example\Main.class
-org\example\NumberGeneratorImpl.class
-org\example\NumberGenerator.class
-org\example\Game.class
-org\example\GameImpl.class
+org\example\console\GameImpl.class
+org\example\console\MessageGeneratorImpl.class
+org\example\console\NumberGenerator.class
+org\example\console\NumberGeneratorImpl.class
+org\example\console\Game.class
+org\example\console\AppConfig.class
+org\example\console\MessageGenerator.class

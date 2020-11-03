@@ -1,5 +1,8 @@
-package org.example;
+package org.example.console;
 
+import org.example.AppConfig;
+import org.example.MessageGenerator;
+import org.example.NumberGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
