@@ -14,9 +14,11 @@ public class GameImpl implements Game {
     // == fields ==
     @Autowired
     private NumberGenerator numberGenerator;
-    private int guessCount = 10;
-    private int number;
-    private int guess;
+
+    @Autowired
+    private int guessCount;
+    private int number; // number to guess
+    private int guess; // your attempt
     private int smallest;
     private int biggest;
     private int remainingGuesses;
@@ -69,6 +71,11 @@ public class GameImpl implements Game {
     @Override
     public int getRemainingGuesses() {
         return remainingGuesses;
+    }
+
+    @Override
+    public int getGuessCount() {
+        return guessCount;
     }
 
     @Override

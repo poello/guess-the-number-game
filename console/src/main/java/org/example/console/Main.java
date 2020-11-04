@@ -1,6 +1,6 @@
 package org.example.console;
 
-import org.example.AppConfig;
+import org.example.config.AppConfig;
 import org.example.MessageGenerator;
 import org.example.NumberGenerator;
 import org.slf4j.Logger;
@@ -16,7 +16,7 @@ public class Main {
 
         // create context (container)
         ConfigurableApplicationContext context
-                = new AnnotationConfigApplicationContext(AppConfig.class);
+                = new AnnotationConfigApplicationContext(AppConfig.class); // here listener is poked
 
         // get number generator bean from context (container)
         NumberGenerator numberGenerator
