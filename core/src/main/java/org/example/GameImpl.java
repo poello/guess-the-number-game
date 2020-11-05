@@ -16,6 +16,7 @@ public class GameImpl implements Game {
     private NumberGenerator numberGenerator;
 
     @Autowired
+    @GuessCount
     private int guessCount;
     private int number; // number to guess
     private int guess; // your attempt

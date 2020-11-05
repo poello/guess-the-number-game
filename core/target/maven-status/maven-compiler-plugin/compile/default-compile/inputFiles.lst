@@ -1,7 +1,10 @@
-C:\Users\Pawel\IdeaProjects\SpringCourse\guess-the-number-game\core\src\main\java\org\example\console\Game.java
-C:\Users\Pawel\IdeaProjects\SpringCourse\guess-the-number-game\core\src\main\java\org\example\console\MessageGeneratorImpl.java
-C:\Users\Pawel\IdeaProjects\SpringCourse\guess-the-number-game\core\src\main\java\org\example\console\AppConfig.java
-C:\Users\Pawel\IdeaProjects\SpringCourse\guess-the-number-game\core\src\main\java\org\example\console\MessageGenerator.java
-C:\Users\Pawel\IdeaProjects\SpringCourse\guess-the-number-game\core\src\main\java\org\example\console\NumberGeneratorImpl.java
-C:\Users\Pawel\IdeaProjects\SpringCourse\guess-the-number-game\core\src\main\java\org\example\console\NumberGenerator.java
-C:\Users\Pawel\IdeaProjects\SpringCourse\guess-the-number-game\core\src\main\java\org\example\console\GameImpl.java
+C:\Users\Pawel\IdeaProjects\SpringCourse\guess-the-number-game\core\src\main\java\org\example\MessageGeneratorImpl.java
+C:\Users\Pawel\IdeaProjects\SpringCourse\guess-the-number-game\core\src\main\java\org\example\NumberGenerator.java
+C:\Users\Pawel\IdeaProjects\SpringCourse\guess-the-number-game\core\src\main\java\org\example\Game.java
+C:\Users\Pawel\IdeaProjects\SpringCourse\guess-the-number-game\core\src\main\java\org\example\config\GameConfig.java
+C:\Users\Pawel\IdeaProjects\SpringCourse\guess-the-number-game\core\src\main\java\org\example\MessageGenerator.java
+C:\Users\Pawel\IdeaProjects\SpringCourse\guess-the-number-game\core\src\main\java\org\example\GuessCount.java
+C:\Users\Pawel\IdeaProjects\SpringCourse\guess-the-number-game\core\src\main\java\org\example\config\AppConfig.java
+C:\Users\Pawel\IdeaProjects\SpringCourse\guess-the-number-game\core\src\main\java\org\example\GameImpl.java
+C:\Users\Pawel\IdeaProjects\SpringCourse\guess-the-number-game\core\src\main\java\org\example\MaxNumber.java
+C:\Users\Pawel\IdeaProjects\SpringCourse\guess-the-number-game\core\src\main\java\org\example\NumberGeneratorImpl.java
