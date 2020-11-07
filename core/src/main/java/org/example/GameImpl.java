@@ -2,22 +2,20 @@ package org.example;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
+@Component
 public class GameImpl implements Game {
-    // == contants ==
+    // == constants ==
     public static final Logger log = LoggerFactory.getLogger(GameImpl.class);
 
     // == fields ==
-    @Autowired
-    private NumberGenerator numberGenerator;
+    private final NumberGenerator numberGenerator;
+    private final int guessCount;
 
-    @Autowired
-    @GuessCount
-    private int guessCount;
     private int number; // number to guess
     private int guess; // your attempt
     private int smallest;
@@ -25,12 +23,18 @@ public class GameImpl implements Game {
     private int remainingGuesses;
     private boolean validNumberRange = true;
 
+    // == constructors ==
+    public GameImpl(NumberGenerator numberGenerator, @GuessCount int guessCount) { // thanks to @Component here(?) and in NumberGeneratorImpl class
+        this.numberGenerator = numberGenerator;                                    // to this parameter it's automatically being parsed numberGenerator bean (@Autowired not requested)
+        this.guessCount = guessCount;
+    }
+
     // == init ==
     @PostConstruct
     @Override
     public void reset() {
-        smallest = 0;
-        guess = 0;
+        smallest = numberGenerator.getMinNumber();
+        guess = numberGenerator.getMinNumber();
         remainingGuesses = guessCount;
         biggest = numberGenerator.getMaxNumber();
         number = numberGenerator.next();

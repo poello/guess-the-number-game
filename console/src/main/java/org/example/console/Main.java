@@ -1,8 +1,6 @@
 package org.example.console;
 
-import org.example.config.AppConfig;
-import org.example.MessageGenerator;
-import org.example.NumberGenerator;
+import org.example.config.GameConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -16,22 +14,7 @@ public class Main {
 
         // create context (container)
         ConfigurableApplicationContext context
-                = new AnnotationConfigApplicationContext(AppConfig.class); // here listener is poked
-
-        // get number generator bean from context (container)
-        NumberGenerator numberGenerator
-                = context.getBean(NumberGenerator.class);
-
-        // call method next() to get a random number
-        int number = numberGenerator.next();
-
-        // log generated number
-        log.info("number = {}", number);
-
-        // get message generator bean from context (container)
-        MessageGenerator messageGenerator = context.getBean(MessageGenerator.class);
-        log.info("getMainMessage = {}", messageGenerator.getMainMessage());
-        log.info("getResultMessage = {}", messageGenerator.getResultMessage());
+                = new AnnotationConfigApplicationContext(GameConfig.class); // here listener is poked
 
         // close context (container)
         context.close();
