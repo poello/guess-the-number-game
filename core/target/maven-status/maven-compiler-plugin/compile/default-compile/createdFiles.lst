@@ -1,7 +1,7 @@
 org\example\MessageGeneratorImpl.class
 org\example\config\GameConfig.class
+org\example\MinNumber.class
 org\example\NumberGeneratorImpl.class
-org\example\config\AppConfig.class
 org\example\NumberGenerator.class
 org\example\Game.class
 org\example\GameImpl.class
